@@ -54,6 +54,7 @@ class FeedCache {
 		// echo the field
 		echo "<input id='duration' name='feed_cache[duration]'
  type='text' value='".esc_attr( $value )."' size='2' /> minutes";
+ 		echo "<p class='description'>The default and maximum value of feed cache duration is 5 minutes.</p>";
 
 	}
 
