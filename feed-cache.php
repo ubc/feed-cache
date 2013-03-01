@@ -20,6 +20,11 @@ class FeedCache {
 
 		$cache_in_sec = get_option( 'feed_cache' )*60;
 
+		if ( is_null($cache_in_sec) ) {
+			$cache_in_sec = 300;
+			update_option( 'feed_cache', 5 );
+		}
+		
 		if($cache_in_sec > 300) {
 			return 300;
 		}
