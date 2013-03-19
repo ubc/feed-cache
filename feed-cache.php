@@ -18,8 +18,8 @@ class FeedCache {
 
 	function feed_cache_filter($time) {
 
-    $feed_cache_options = get_option( 'feed_cache' );
-    $cache_in_sec = $feed_cache_options['duration'] * 60;
+		$feed_cache_options = get_option( 'feed_cache' );
+		$cache_in_sec = $feed_cache_options['duration'] * 60;
 
 		if ( is_null($cache_in_sec) ) {
 			$cache_in_sec = 300;
